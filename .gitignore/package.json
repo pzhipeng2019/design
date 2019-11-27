@@ -1,0 +1,51 @@
+{
+  "name": "xg_design",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --history-api-fallback --mode development --inline--progress--colors",
+    "build": "webpack --mode development --inline--progress--colors",
+    "server": "webpack-dev-server --open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "glob-all": "^3.1.0",
+    "html-loader": "^0.5.5",
+    "image-webpack-loader": "^6.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "style-loader": "^1.0.0",
+    "svg-sprite-loader": "^4.1.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-deep-scope-plugin": "^1.6.2",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "webpack.config.js",
+  "author": "",
+  "license": "ISC"
+}
