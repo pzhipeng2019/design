@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import "./component/style/style.less"
+import { HashRouter as Router, Route,Switch} from "react-router-dom";
 import Layout from "./component/Layout";
-
+import "./component/style/style.less";
+import "./component/style/xg_style.less";
+import "./component/style/xg_style1.less";
+import "./component/style/color.less";
 class App extends Component {
     constructor(props){
         super(props);
@@ -12,8 +15,9 @@ class App extends Component {
   render() {
     return (
         <div className="app">
-            <Layout/>
-
+            <Router>
+                <Layout/>
+            </Router>
         </div>
     );
   }
