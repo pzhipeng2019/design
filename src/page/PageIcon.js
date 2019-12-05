@@ -18,9 +18,27 @@ class PageIcon extends Component {
                             </span>
                         </li>
                         <li className="">
+                            <Icon title="icon-up"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-up</span>
+                            </span>
+                        </li>
+                        <li className="">
                             <Icon title="icon-down"/>
                             <span className="anticon-class">
                                 <span className="xg-badge">icon-down</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-left"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-left</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-right"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-right</span>
                             </span>
                         </li>
                         <li className="">
@@ -125,6 +143,18 @@ class PageIcon extends Component {
                             <Icon title="icon-caret-up"/>
                             <span className="anticon-class">
                                 <span className="xg-badge">icon-caret-up</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-double-left"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-double-left</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-double-right"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-double-right</span>
                             </span>
                         </li>
 

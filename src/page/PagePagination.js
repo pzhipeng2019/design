@@ -1,36 +1,75 @@
 import React, {Component} from 'react';
-
+import Pagination from "../component/Pagination";
+function onShowSizeChange(current,pagesize){
+    console.log(current,pagesize)
+}
+function itemRender(current, type, originalElement) {
+    if (type === 'prev') {
+        return <a>Previous</a>;
+    }
+    if (type === 'next') {
+        return <a>Next</a>;
+    }
+    return originalElement;
+}
 class PagePagination extends Component {
     render() {
         return (
             <div>
-                <section className="code-box-demo">
-                    <ul className="xg-pagination" unselectable="unselectable">
-                        <li title="上一页" className="xg-pagination-disabled xg-pagination-prev" aria-disabled="true"><a
-                            className="xg-pagination-item-link"><i aria-label="图标: left"
-                                                                    className="anticon anticon-left">
-                            <svg viewBox="64 64 896 896" focusable="false" className="" data-icon="left" width="1em"
-                                 height="1em" fill="currentColor" aria-hidden="true">
-                                <path
-                                    d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path>
-                            </svg>
-                        </i></a></li>
-                        <li title="1" className="xg-pagination-item xg-pagination-item-1 xg-pagination-item-active"
-                            tabIndex="0"><a>1</a></li>
-                        <li title="2" className="xg-pagination-item xg-pagination-item-2" tabIndex="0"><a>2</a></li>
-                        <li title="3" className="xg-pagination-item xg-pagination-item-3" tabIndex="0"><a>3</a></li>
-                        <li title="4" className="xg-pagination-item xg-pagination-item-4" tabIndex="0"><a>4</a></li>
-                        <li title="5" className="xg-pagination-item xg-pagination-item-5" tabIndex="0"><a>5</a></li>
-                        <li title="下一页" className=" xg-pagination-next" aria-disabled="false" tabIndex="0"><a
-                            className="xg-pagination-item-link"><i aria-label="图标: right"
-                                                                    className="anticon anticon-right">
-                            <svg viewBox="64 64 896 896" focusable="false" className="" data-icon="right" width="1em"
-                                 height="1em" fill="currentColor" aria-hidden="true">
-                                <path
-                                    d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path>
-                            </svg>
-                        </i></a></li>
-                    </ul>
+                <div className={"titleColor fSize24"}>Pagination分页</div>
+                <div className="fSize14 bodyColor">
+                    <p>采用分页的形式分隔长列表，每次只加载一个页面。</p>
+                </div>
+                <section className="">
+                    <div>基础分页。</div>
+                    <Pagination defaultCurrent={1} total={51} showSizeChanger/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>更多分页。</div>
+                    <Pagination defaultCurrent={2} total={100} onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>快速跳转到某一页。</div>
+                    <Pagination defaultCurrent={2} total={100} showQuickJumper onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>改变每页显示条目数。</div>
+                    <Pagination defaultCurrent={2} total={100} showSizeChanger onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>组合分页。</div>
+                    <Pagination defaultCurrent={2} total={100} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>禁用分页</div>
+                    <Pagination defaultCurrent={2} total={100} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange} disabled/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>迷你版本。</div>
+                    <Pagination size="small" defaultCurrent={2} total={100} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>简单的翻页。</div>
+                    <Pagination size="small" defaultCurrent={2} total={100} showSizeChanger showQuickJumper simple onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>通过设置 showTotal 展示总共有多少数据。</div>
+                    <Pagination showTotal={total => `Total ${total} items`} defaultCurrent={2} total={100} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
+
+                    <Pagination  showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`} defaultCurrent={2} total={101} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
+                </section>
+                <br/><br/><br/>
+                <section className="">
+                    <div>修改上一步和下一步为文字链接。</div>
+                    <Pagination total={500} itemRender />
                 </section>
             </div>
         );

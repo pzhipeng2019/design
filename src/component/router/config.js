@@ -15,6 +15,7 @@ import PageTable from "../../page/PageTable"
 import PageCheckbox from "../../page/PageCheckbox";
 import PageRadiobox from "../../page/PageRadiobox";
 import PagePagination from "../../page/PagePagination";
+import PageSelect from "../../page/PageSelect";
 let routers = [
     {
         path:"/",
@@ -99,6 +100,12 @@ let routers = [
         exact:false,
         component:PagePagination,
         title:"Pagination分页"
+    },
+    {
+        path:"/select",
+        exact:false,
+        component:PageSelect,
+        title:"Select选择器"
     },
     {
         path:"/test",
