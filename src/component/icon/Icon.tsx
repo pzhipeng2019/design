@@ -1,15 +1,17 @@
-import React from 'react';
-import  "./icons/address_icon.svg";
+import React from 'react'
+import save from "./icons/save"
 
-
-interface IconProps {
+console.log(save)
+export interface IconProps {
     name: string
 }
 
 const Icon: React.FunctionComponent<IconProps> = () => {
     return (
         <span>
-     aaaa
+      <svg>
+        <use xlinkHref="#save"></use>
+      </svg>
     </span>
     )
 }

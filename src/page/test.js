@@ -2,8 +2,8 @@ import React from "react"
 import {CSSTransition} from 'react-transition-group';
 import ReactDOM from 'react-dom';
 
-import Fades from "../component/Fades";
-import Switch from "../component/Switch";
+import Fades from "../XGComponent/Fades";
+import Switch from "../XGComponent/Switch";
 let num = 1;
 class Test extends React.Component {
     state = {

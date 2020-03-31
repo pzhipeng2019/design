@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Pagination from "../component/Pagination";
+import Pagination from "../XGComponent/Pagination";
 function onShowSizeChange(current,pagesize){
     console.log(current,pagesize)
 }
@@ -70,6 +70,12 @@ class PagePagination extends Component {
                 <section className="">
                     <div>修改上一步和下一步为文字链接。</div>
                     <Pagination total={500} itemRender />
+                </section>
+                <section className="">
+                    <div>通过设置 showTotal 展示总共有多少数据。</div>
+                    <Pagination showTotal={total => `Total ${total} items`} defaultCurrent={2} total={100} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
+
+                    <Pagination  showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`} defaultCurrent={2} total={101} showSizeChanger showQuickJumper onShowSizeChange={onShowSizeChange}/>
                 </section>
             </div>
         );

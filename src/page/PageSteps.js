@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
-import Steps from "../component/Steps";
-import Step from "../component/Step";
-import Icon from "../component/Icon";
-import Button from "../component/Button";
+import Steps from "../XGComponent/Steps";
+import Step from "../XGComponent/Step";
+import Icon from "../XGComponent/Icon";
+import Button from "../XGComponent/Button";
+import PageStepsConst from "./PageStepsConst";
 const steps = [
     {
         title: 'First',
-        content: 'First-content',
+        content:<PageStepsConst/>,
     },
     {
         title: 'Second',
-        content: 'Second-content',
+        content: <PageStepsConst/>,
     },
     {
         title: 'Last',
-        content: 'Last-content',
+        content:<PageStepsConst/>,
     },
 ];
+
+
+
 class PageSteps extends Component {
     constructor(props){
         super(props);

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from "react-dom";
-import Button from "../component/Button";
-import ButtonGroup from "../component/ButtonGroup";
+import Button from "../XGComponent/Button";
+import ButtonGroup from "../XGComponent/ButtonGroup";
 
 
 

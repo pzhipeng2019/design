@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Breadcrumb from "../component/Breadcrumb";
-import BreadcrumbItem from "../component/BreadcrumbItem";
-import Icon from "../component/Icon";
+import Breadcrumb from "../XGComponent/Breadcrumb";
+import BreadcrumbItem from "../XGComponent/BreadcrumbItem";
+import Icon from "../XGComponent/Icon";
 
 
 class PageBreadcrumber extends Component {

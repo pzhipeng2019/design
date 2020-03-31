@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
-import Dropdown from "../component/Dropdown";
-import Button from "../component/Button";
+import Dropdown from "../XGComponent/Dropdown";
+import Button from "../XGComponent/Button";
 import {CSSTransition,TransitionGroup} from "react-transition-group"
-import Menu from "../component/Menu";
-import SubMenu from "../component/SubMenu";
-import Item from "../component/Item";
+import Menu from "../XGComponent/Menu";
+import SubMenu from "../XGComponent/SubMenu";
+import Item from "../XGComponent/Item";
 class Navigation extends Component {
     constructor(props){
         super(props);
@@ -111,7 +111,7 @@ class Navigation extends Component {
                         </div>
                         <br/> <br/> <br/> <br/>
                         <div className="dropdownGroup dropdownGroup_sm">
-                            <Dropdown ButtonData={{size:"sm",title:"菜单按钮",type:"xg-btn-primary"}} Icon={"icon-down"}>
+                            <Dropdown ButtonData={{size:"sm",title:"菜单按钮",type:"xg-btn-primary aaaaa"}} Icon={"icon-down"}>
                                 <div className="xg-dropdown xg-dropdown-placement-bottomLeft ">
                                     <ul className="xg-dropdown-menu xg-dropdown-menu-light xg-dropdown-menu-root " role="menu" tabIndex="0" >
                                         <li className="xg-dropdown-menu-item" role="menuitem" key={1}>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Row from "../component/Row";
-import Col from "../component/Col";
+import Row from "../XGComponent/Row";
+import Col from "../XGComponent/Col";
 
 class ContentLayout extends Component {
     render() {

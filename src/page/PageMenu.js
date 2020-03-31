@@ -1,11 +1,11 @@
 import React, {Component,Fragment} from 'react';
 import {CSSTransition,TransitionGroup} from "react-transition-group";
-import Button from "../component/Button";
-import Menu from "../component/Menu";
-import ButtonGroup from "../component/ButtonGroup";
-import SubMenu from "../component/SubMenu";
-import ItemGroup from "../component/ItemGroup";
-import Item from "../component/Item";
+import Button from "../XGComponent/Button";
+import Menu from "../XGComponent/Menu";
+import ButtonGroup from "../XGComponent/ButtonGroup";
+import SubMenu from "../XGComponent/SubMenu";
+import ItemGroup from "../XGComponent/ItemGroup";
+import Item from "../XGComponent/Item";
 
 class PageMenu extends Component {
     constructor(props){

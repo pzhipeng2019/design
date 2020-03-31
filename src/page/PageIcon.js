@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Icon from "../component/Icon";
+import Icon from "../XGComponent/Icon";
 
 class PageIcon extends Component {
     render() {
@@ -12,11 +12,18 @@ class PageIcon extends Component {
                 <section>
                     <ul className="anticons-list">
                         <li className="">
-                            <Icon title="icon-save"/>
+                            <Icon title="icon-plus"/>
                             <span className="anticon-class">
-                                <span className="xg-badge">icon-save</span>
+                                <span className="xg-badge">icon-plus</span>
                             </span>
                         </li>
+                        <li className="">
+                            <Icon title="icon-minus"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-minus</span>
+                            </span>
+                        </li>
+
                         <li className="">
                             <Icon title="icon-up"/>
                             <span className="anticon-class">
@@ -157,7 +164,115 @@ class PageIcon extends Component {
                                 <span className="xg-badge">icon-double-right</span>
                             </span>
                         </li>
+                        <li className="">
+                            <Icon title="icon-setting"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-setting</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-loading anticon-spin"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-loading</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-exclamation-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-exclamation-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-mail"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-mail</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-form"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-form</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-question-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-question-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-solid-check-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-solid-check-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-solid-close-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-solid-close-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-solid-down-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-solid-down-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-solid-right-circle"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-solid-right-circle</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-solid-caret-right"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-solid-caret-right</span>
+                            </span>
+                        </li>
 
+                        <li className="">
+                            <Icon title="icon-system"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-system</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-drag"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-drag</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-arrow-down"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-arrow-down</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-drag-up"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-drag-up</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-stars"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-stars</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-video_play"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-video_play</span>
+                            </span>
+                        </li>
+                        <li className="">
+                            <Icon title="icon-audio"/>
+                            <span className="anticon-class">
+                                <span className="xg-badge">icon-audio</span>
+                            </span>
+                        </li>
                     </ul>
                 </section>
             </div>

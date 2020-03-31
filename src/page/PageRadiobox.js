@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Radio from "../component/Radio";
-import Button from "../component/Button";
-import RadioGroup from "../component/RadioGroup";
-import Input from "../component/Input";
-import RadioButton from "../component/RadioButton";
+import Radio from "../XGComponent/Radio";
+import Button from "../XGComponent/Button";
+import RadioGroup from "../XGComponent/RadioGroup";
+import Input from "../XGComponent/Input";
+import RadioButton from "../XGComponent/RadioButton";
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];
 const options = [

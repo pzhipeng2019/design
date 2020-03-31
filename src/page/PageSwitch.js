@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Switch from "../component/Switch";
+import Switch from "../XGComponent/Switch";
 
 class PageSwitch extends Component {
     constructor(props){

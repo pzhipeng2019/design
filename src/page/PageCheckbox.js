@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Checkbox from "../component/Checkbox";
-import Button from "../component/Button";
-import CheckboxGroup from "../component/CheckboxGroup";
-import Row from "../component/Row";
-import Col from "../component/Col";
+import Checkbox from "../XGComponent/Checkbox";
+import Button from "../XGComponent/Button";
+import CheckboxGroup from "../XGComponent/CheckboxGroup";
+import Row from "../XGComponent/Row";
+import Col from "../XGComponent/Col";
 function onChange(e) {
    // console.log(`checked = ${e.target.checked}`);
 }

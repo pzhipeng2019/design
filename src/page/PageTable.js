@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Table from "../component/Table";
-import Tbody from "../component/Tbody";
-import Tag from "../component/Tag";
-import Divider from "../component/Divider";
-import Dropdown from "../component/Dropdown";
-import Td from "../component/Td";
+import Table from "../XGComponent/Table";
+import Tbody from "../XGComponent/Tbody";
+import Tag from "../XGComponent/Tag";
+import Divider from "../XGComponent/Divider";
+import Dropdown from "../XGComponent/Dropdown";
+import Td from "../XGComponent/Td";
 const dataSource = [
     {
         key: '1',
